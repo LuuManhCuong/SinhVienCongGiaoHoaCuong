@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinh Viên Công Giáo Hòa Cường</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/166123463_140329751427190_5411494698525901001_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=1qbyBBEMJMwAX-5GQwA&_nc_ht=scontent.fdad1-2.fna&oh=e7b5ff6f70db45272734813103a32f0f&oe=61D45F26"/>
+    <link rel="stylesheet" href="./accsets/grid.css">
+    <link rel="stylesheet" href="./accsets/style.css">
+    <link rel="stylesheet" href="./accsets/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+</head>
+<body>
+    <div class="main-group event-container">
+        <!-- header -->
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img src="https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/166123463_140329751427190_5411494698525901001_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=1qbyBBEMJMwAX-5GQwA&_nc_ht=scontent.fdad1-2.fna&oh=e7b5ff6f70db45272734813103a32f0f&oe=61D45F26" alt="logo">
+            </a>
+            <ul class="header__list hide-on-mobile">
+                <li class="header__item">
+                    <a href="./index.html">trang chủ</a>
+                </li>
+                <li style="border-bottom: 5px solid #ffffff;" class="header__item">
+                    <a href="./event.html">sự kiện</a>
+                </li>
+                <li class="header__item">
+                    <a href="./img.html">hình ảnh</a>
+                </li>
+                <li class="header__item">
+                    <a href="./about.html">giới thiệu</a>
+                </li>
+                <li class="header__item">
+                    <a href="./join.html">tham gia nhóm</a>
+                </li>
+            </ul>
+            
+            <div class="group-icon">
+                <div class="noti">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <ul class="noti_list">
+                        <li class="noti_item">
+                            <h3>không có thông báo</h3>
+                        </li>
+                    </ul>
+                </div>
+                <!-- menu chỉ chỉ hiện khi responsive -->
+                <div class="menu_rps">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a style="border-bottom: 5px solid #ffffff;" href="./index.html">trang chủ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./event.html">sự kiện</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./img.html">hình ảnh</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="./about.html">giới thiệu</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#contact-us-wrap">tham gia nhóm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+       
+
+        <div class="event-group">
+            <!-- <div class="join-group">
+                <div class="form-context">
+                    <h3>sắp diễn ra</h3>
+                    <h2>Đại lễ giáng sinh</h2>
+                    <p>Gắn kết, giao lưu, học hỏi, chia sẻ và nâng đỡ nhau để thăng tiến hơn trong đời sống Đức Tin và giúp cho các bạn sinh viên khi tham gia vào có một kỹ năng hoạt động nhóm tốt và có phương pháp học tốt nhất cho mình.</p>
+                </div>
+                
+                <div id="contact-us-wrap" class="contact-us-wrap">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-12 m-12">
+                                <div class="contact-us">
+                                    <div class="contact-us__container">
+                                        <div class="contact-info event-poster">
+                                            <img src="https://img.pikbest.com/templates/20201028/bg/523c9d7e626c2.png!c1024wm0/compress/true/progressive/true/format/webp/fw/1024" alt="">
+                                        </div>
+                                        
+                                        <div class="contact-form" id="contact-form">
+                                            <h2>hoạt động chào mừng đại lễ giáng sinh</h2>
+                                            <div class="form-box">
+                                                <div class="input-box w100 event-wraper">
+                                                    <div class="event-form">
+                                                        <ul class="event-form__info">
+                                                            <li>
+                                                                <p class="event-form__time">7:00</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="event-form__date">20/12/2021</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="event-form__address">nhà thờ Hòa Cường</p>
+                                                            </li>
+                                                        </ul>   
+                                                        <div class="event-form__title">
+                                                            <input type="checkbox" name="activities" value="test1" required>
+                                                            <h3>dọn dẹp nhà thờ</h3>
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+                                                <div class="input-box w100">
+                                                    <button class="form-submit-all">tham gia tất cả</button>
+                                                    <button class="form-submit">tham gia tất cả</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- footer -->
+        <footer class="footer-wrap">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <div class="footer">
+                            <div class="footer__logo">
+                                <img src="https://scontent.fdad1-2.fna.fbcdn.net/v/t1.6435-9/166123463_140329751427190_5411494698525901001_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=1qbyBBEMJMwAX-5GQwA&_nc_ht=scontent.fdad1-2.fna&oh=e7b5ff6f70db45272734813103a32f0f&oe=61D45F26" alt="logo">
+                                <p>Thánh bổn mạng: Thánh Gioan Tông đồ – mừng lễ ngày 27/12. <br>
+                                    Tôn chỉ: “Học Cùng Giêsu” <br>
+                                    Khẩu hiệu: Hiệp Nhất – Yêu Thương – Phục Vụ <br>
+                                    Tinh thần sống: Sống theo gương Chúa Giêsu và Thánh Gioan tông đồ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6">
+                        <div class="footer">
+                            <div class="footer-form footer__connect">
+                                <h2>kết nối với chúng tôi</h2>
+                                <p>Mạng xã hội</p>
+                                <ul class="footer__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12">
+                        <div class="footer">
+                            <div class="footer-form footer__subcribe">
+                                <h2>liên hệ</h2>
+                                <p>Email</p>
+                                <div class="footer__subcribe__input">
+                                    <input type="email" placeholder="Email">
+                                    <button>subcribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+        <div class="footer_copyright">
+            <h2>powered by Lưu Mạnh Cường 2021</h2>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./accsets/api.js"></script>
+    <!-- <script src="./accsets/main.js"></script> -->
+    </script>
+</body>
+</html>
