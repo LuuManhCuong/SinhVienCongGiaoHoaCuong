@@ -1,7 +1,11 @@
     console.log("api.js")
 // lấy Api 
-var imgApi = 'http://localhost:3000/images'
-var eventApi = 'http://localhost:3000/events'
+// var imgApi = 'http://localhost:3000/images'
+// var eventApi = 'http://localhost:3000/events'
+
+var imgApi = 'https://luumanhcuong.github.io/SinhVienCongGiaoHoaCuong/json_server/db.json'
+var eventApi = 'https://luumanhcuong.github.io/SinhVienCongGiaoHoaCuong/json_server/db.json'
+
 
 function start() {
         // lấy apiImg và xử lý
@@ -24,7 +28,8 @@ function getApiImages(calback) {
 }
 
 
-function renderImg(imgs, curentDefault) {
+function renderImg(data) {
+    var imgs = data.images
     // console.log(imgs[0])
 
     // sidebar title
@@ -105,7 +110,8 @@ function renderImg(imgs, curentDefault) {
 }
 
 // render hoạt động nổi bật
-function renderActiveImg(images) {
+function renderActiveImg(data) {
+    var images = data.images
     var imgBlock = document.querySelector('.render__imgs')
     if(imgBlock) {
         var imgBlockHtml =  images.map((image) => {
@@ -181,8 +187,9 @@ function renderActiveImg(images) {
 
 
 // render các hoạt động
-function renderActivities(events) {
-
+function renderActivities(data) {
+    var events = data.events
+    
     var activeBlock = document.querySelector('.event-group')
     if(activeBlock) {
         var formActiveHtml = events.map((event) => {
@@ -356,8 +363,8 @@ function getApiEvents(callback) {
 
 
 
-function renderEvents(events) {
-    // console.log(events)
+function renderEvents(data) {
+    var events = data.events
     var eventsBlock = document.querySelector('.render-events')
 
     var eventHtml = events.map((event) => {
